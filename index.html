@@ -1,0 +1,101 @@
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="assets/css/style.css">
+            <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+            <script src="https://cdn.tailwindcss.com"></script>
+            <link rel="icon" href="assets/img/Pokeball-3712190362">
+            <title>Pokedex</title>
+        </head>
+
+        <body>
+            
+
+            <main class="my-5 py-5">
+                <section  class="section-home">
+                    <header class="w-full">
+                        <nav class="w-4/5 h-24 mx-auto flexbox">
+                            <div>
+                                <p class="text-4xl">Pokédex</p>
+                            </div>
+                        </nav>
+                    </header>
+                    <div class="w-4/5 h-auto mx-auto my-10">
+                        <img class="img-pokeball mx-auto"  src="assets/img/Pokeball-3712190362" alt="">
+                    </div>
+                    <div id="ShowError">
+                        <h3 id="show-error-text">  </h3>
+                    </div>
+                    <form action="" class="container-input flexbox mx-auto justify-between">
+                        <input class="pokename w-full h-full text-center" type="text" placeholder="Pokemon" id="pokeNameInput" name="pokemon" >
+                        <span class="icon px-2" onclick="insertPokemon()" >
+                            <i class='bx bx-search text-4xl'></i>
+                        </span>
+                    </form>
+                </section>
+
+                <!-- 
+                    POKEMON INFO
+                -->
+                <section id="pokeInfo" class="pokeinfo">
+                    <nav class="w-full h-24 flexbox justify-start ">
+                        <div class="flexbox flex-row" id="btn-back">
+                            <i class='bx bxs-chevron-left text-5xl'></i>
+                            <p class="text-3xl">Pokédex</p>
+                        </div>
+                    </nav>
+                    <div class="flexbox w-full">
+                        <div class="poke__info-container mx-auto">
+                            <div class="flexbox justify-between">
+                                <div>
+                                    <h2 class="text-4xl" id="namePokemon"></h2>
+                                    <p class="font-bold" id="typePokemon"></p>
+                                </div>
+                                <div>
+                                    <img id="pokeImg" width="150px" height="150px"  alt="">
+                                </div>
+                            </div>
+                            <div class="flexbox flex-row justify-around">
+                                <div class="container-features">
+                                    <h3 class="features">Height</h3>
+                                    <p id="pokeHeight"></p>
+                                </div>
+                                <div class="container-features">
+                                    <h3 class="features">Weight</h3>
+                                    <p id="pokeWeight" ></p>
+                                </div>
+                                <div class="container-features">
+                                    <h3 class="features">ID</h3>
+                                    <p id="pokeId"></p>
+                                </div>
+                            </div>
+                                <!-- Estadisticas -->
+                            <div id="ShowPokeStats" class="my-5">
+                                        
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <footer class="footer ">
+                <section class="w-4/5 md:w-2/4 mx-auto ">
+                    <div class="flex flex-col">
+                        <h3 class="font-bold" >Creditos</h3>
+                        <hr>
+                        <a class="link" target="_blank" href="https://pokeapi.co/">Poké API</a>
+                        <a class="link" href="https://boxicons.com/?query=github" target="_blank">Iconos de BoxIcons</a>
+                        <a class="link" target="_blank" href="https://tailwindcss.com">Tailwind CSS</a>
+                        <a class="link" target="_blank" href="https://github.com/floressdi/Pokedex">Codigo <i class='bx bx-code-curly bx-tada' ></i></a>
+                        <a class="link" target="__blank" href="https://github.com/floressdi">Creado por Diego Flores <i class='bx bxl-github bx-burst' ></i>   </a>
+
+                    </div>
+                </section>
+            </footer>
+
+            <script src="assets/js/index.js"></script>
+        </body>
+        </html>

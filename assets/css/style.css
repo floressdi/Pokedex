@@ -1,0 +1,140 @@
+
+
+:root{
+    --white: rgb(255,255,255);
+    --black: rgb(10,10,10);
+    --red:rgb(255, 18, 18);
+    --blue:rgb(15, 170, 236);
+    
+}
+
+body{
+    background-color: var(--red);
+    color: var(--white);
+}
+
+.flexbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-input{
+    width: 80%;
+    height: 45px;
+    background-color: var(--white);
+    border-radius: 0.5em;
+}
+
+.section-home{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--red);
+}
+
+.pokename{
+    border-top-left-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+    color: var(--black);
+}
+
+.icon{
+    height: 100%;
+    background-color: var(--blue);
+    color: var(--white);
+    border-top-right-radius:0.5em ;
+    border-bottom-right-radius: 0.5em;
+    cursor: pointer;
+}
+
+.img-pokeball{
+    width: 250px;
+    height: 250px;
+}
+
+.show-error-container{
+    padding: 0.3em;
+    background-color: var(--black);
+    text-align: center;
+    margin-bottom: 1em;
+    transition:all 300ms ease-in-out;
+}
+
+.pokeinfo{
+    width: 100%;
+    height: 100vh;
+    color: var(--black);
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: -150%;
+    display: grid;
+    grid-template-rows: 30% 30%;
+    transition:all 400ms ease-in-out;
+}
+
+.showPokeinfo{
+    right: 0 ;
+}
+
+.poke__info-container{
+    width: 87%;
+    height: auto;
+    background-color: var(--white);
+    padding: 1.5em;
+    border-radius: 1em;
+}
+
+.features{
+    font-weight: bold;
+}
+
+.poke-stats{
+    color: var(--black);
+    font-weight: bold;
+}
+
+.statElement div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--black);
+}
+
+.footer{
+    width: 100%;
+    height: auto;
+    background-color: var(--red);
+    padding: 1.5em;
+}
+
+.footer  div{
+    height: auto;
+    padding: 1em;
+    border-radius: 2em;
+    border: 1px solid var(--white);
+}
+
+.link:hover{
+    color: var(--black);
+}
+
+@media (min-width:1140px){
+
+    .img-pokeball{
+        width: 30%;
+        height: 310px;
+    }
+    
+    .container-input{
+        width: 40%;
+    }
+
+    .poke__info-container{
+        width: 30%;
+    }
+
+    #btn-back{
+        cursor: pointer;
+    }
+}
